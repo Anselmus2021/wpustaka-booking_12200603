@@ -1,7 +1,7 @@
 <?php
 namespace App\Controllers;
 
-use App\Models\Pengguna12200602;
+use App\Models\Pengguna12200603;
 use Config\Services;
 
 class Login extends BaseController{
@@ -29,23 +29,22 @@ class Login extends BaseController{
          if( $v == false ){
              $this->session->setFlashdata('validator', $this->validator);
              return redirect()->to('/login');
-        }else{
-
-            $vl = (new Pengguna12200603())->cekLogin($email, $sandi);
+        }else{ 
             
+            $vl = (new Pengguna12200603())->cekLogin($email, $sandi);
+
             if($vl == null){
                 return redirect()->to('/login')->with('error', 'User dan sandi salah');
             }else{
-                $this->session->set('sudahLogin', true); 
-                return redirect()->to('/beranda');
-
-            }
-         }
+                $this->session->set('sudahLogin', true);
+                return redirect()->to('/beranda');    
+            } 
+        }
     }
 
     public function beranda(){
 
     }
-    
+
 
 }

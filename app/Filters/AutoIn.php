@@ -6,7 +6,7 @@ use CodeIgniter\Filters\FilterInterface;
 use CodeIgniter\HTTP\RequestInterface;
 use CodeIgniter\HTTP\ResponseInterface;
 
-class Auth implements FilterInterface
+class Autoin implements FilterInterface
 {
 	/**
 	 * Do whatever processing this filter needs to do.
@@ -25,8 +25,8 @@ class Auth implements FilterInterface
 	 */
 	public function before(RequestInterface $request, $arguments = null)
 	{
-		if(session()->sudahLogin == false){
-			return redirect()->to('/login')->with('error', 'Pengguna belum login');
+		if(session()->sudahLogin){
+			return redirect()->to('/beranda');
 		}
 	}
 

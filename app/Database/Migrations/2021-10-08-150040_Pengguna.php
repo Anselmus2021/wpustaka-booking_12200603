@@ -24,11 +24,11 @@ class Pengguna extends Migration
 			]
 		]);
 		$this->forge->addKey('id', true);
-		$this->forge->createTable('pengguna_12200603');
+		$this->forge->createTable('pengguna');
 	}
 
 	public function down()
 	{
-		$this->forge->dropTable('pengguna1_2200603');
+		$this->forge->dropTable('pengguna');
 	}
 }

@@ -16,7 +16,7 @@ class PenggunaSeeder extends Seeder
 		    ],
 		    [
 				'nama'      => 'admin',
-				'password'  => md5('12345')
+				'password'  => md5('123')
 		    ],
 		    [
 				'nama'      => '12200603',

@@ -2,7 +2,10 @@
 <?=$this->section('isiweb')?>
 <?php
 
+use Config\Services;
+$vd = $vd ?? Services::validation();
 ?>
+
 <form method="POST" action="<?=base_url('/login')?>">
      <div class="container col-md-3">
             <div class="card mt-5">

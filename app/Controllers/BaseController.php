@@ -36,8 +36,8 @@ class BaseController extends Controller
 	protected $session;
 	/**
 	 * Constructor.
-	 *
-	 * @param RequestInterface  $request
+	 * 
+     * @param RequestInterface  $request
 	 * @param ResponseInterface $response
 	 * @param LoggerInterface   $logger
 	 */

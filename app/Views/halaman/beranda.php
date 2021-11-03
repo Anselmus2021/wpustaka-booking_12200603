@@ -1,6 +1,6 @@
-<?=$this->extend('dasar_tampilan')?>
+<?=$this->extend('template_dashboard')?>
 
-<?=$this->section('isiweb')?>
+<?=$this->section('konten')?>
 
     <div class="container">
         <div class="card">
@@ -8,7 +8,7 @@
                 <h3 class="card-title">Beranda</h3>
             </div>
             <div class="card-body">
-                Halo ini beranda<br/>
+                Halo ini beranda <br/>
                 Email yang diisikan : <?=$email?> <br/>
                 Password : <?=$sandi?>
             </div>
